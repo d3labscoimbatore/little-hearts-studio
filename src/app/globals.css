@@ -2,32 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  overflow: hidden;
+  user-select: none;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.container {
+  overflow: hidden;
+}
+
+#confetti {
+  width: 90rem;
+  height: 90rem;
+}
+
+p {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 75px;
+  color: #804fb9;
+}
+
+#littleHeartStudio {
+  position: fixed;
+  bottom: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+  p {
+    margin-top: 8rem;
+    font-size: 2rem;
+  }
+
+  #confetti {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  #littleHeartStudio {
+    width: 30rem;
+    height: 30rem;
+    bottom: 5rem;
   }
 }
