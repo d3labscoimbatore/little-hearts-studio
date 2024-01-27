@@ -4,8 +4,10 @@ import "./globals.css";
 const JosefinSans = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata = {
+  // title:
+  //   "Little Hearts Studio | Maternity • New Born • Toddler • Family Potraits",
   title:
-    "Expert Baby Photography Services | Newborn to Toddler Shoots | Tamil Nadu | Little Hearts Studio",
+    "Little Hearts Studio | Baby Photography Services",
   description:
     "Capturing precious moments with professional baby photography services. Cherish the joy of parenthood with our expert photographers specializing in newborn, infant, and toddler photo sessions. Book your session today for timeless memories.",
   icons: {
