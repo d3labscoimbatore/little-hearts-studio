@@ -43,12 +43,17 @@ p {
     display: block;
   }
 
-  #confetti{
+  #confetti {
     width: 25rem;
-    height: 20rem;
+    height: 25rem;
+    bottom: 10rem;
   }
 
-  #animation{
+  #confetti path {
+    fill: #804fb9;
+  }
+
+  #animation {
     background-color: red;
   }
   #animation-logo {
